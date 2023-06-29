@@ -29,7 +29,7 @@ const io = socketio(server, {
         origin: "*",
     },
 });
-const Date = moment().format();
+// const Date = moment().format();
 
 io.on("connection", (socket) => {
     console.log(`${socket.id} connected`);
@@ -84,4 +84,4 @@ server.listen(port, () => {
     console.log(`Server listening on port ${port}`);
 });
 
-simpleGit().add(["./Action.js"]).commit(Date, { "--date": Date });
+// simpleGit().add(["./Action.js"]).commit(Date, { "--date": Date });
